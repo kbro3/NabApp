@@ -1,0 +1,84 @@
+<!-- Form block for edit and add customer -->
+
+<div class="form-group required">
+  <label for="firstName" class="col-sm-2 control-label">First name</label>
+  <div class="col-sm-10">
+    <input required type="text" ng-model="customer.firstName" class="form-control" id="firstName"/>
+  </div>
+</div>
+
+<div class="form-group">
+  <label for="middleName" class="col-sm-2 control-label">Middle name</label>
+  <div class="col-sm-10">
+    <input type="text" ng-model="customer.middleName" class="form-control" id="middleName"/>
+  </div>
+</div>
+
+<div class="form-group required">
+  <label for="surname" class="col-sm-2 control-label">Surname</label>
+  <div class="col-sm-10">
+    <input required type="text" ng-model="customer.surname" class="form-control" id="surname"/>
+  </div>
+</div>
+	
+<div class="form-group">
+  <label for="initials" class="col-sm-2 control-label">Initials</label>
+  <div class="col-sm-10">
+    <input type="text" ng-model="customer.initials" class="form-control" id="initials"/>
+  </div>
+</div>
+	
+<div class="form-group">
+  <label for="title" class="col-sm-2 control-label">Title</label>
+  <div class="col-sm-10">
+    <select class = "form-control" ng-model="customer.title" name="titleSelect">
+      <option value="mr">Mr</option>
+      <option value="mrs">Mrs</option>
+      <option value="ms">Ms</option>
+    </select>
+    
+  </div>
+</div>	
+
+<div class="form-group">
+  <label for="sex" class="col-sm-2 control-label">Sex</label>
+  <div class="col-sm-10">
+    <select class = "form-control" ng-model="customer.sex" name="sexSelect">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select>
+  </div>
+</div>		
+
+<div class="form-group">
+  <label for="maritalStatus" class="col-sm-2 control-label">Marital status</label>
+  <div class="col-sm-10">
+    <select class = "form-control" ng-model="customer.maritalStatus" name="maritalStatus">
+      <option value="single">Single</option>
+      <option value="married">Married</option>
+      <option value="defacto">De facto</option>
+    </select>
+  </div>
+</div>	
+
+<div class="form-group">
+  <label for="creditRating" class="col-sm-2 control-label">Credit rating</label>
+  <div class="col-sm-10">
+    <input type="text" ng-model="customer.creditRating" class="form-control" id="creditRating" placeholder="0-100"/>
+  </div>
+</div>	
+
+<div class="form-group">
+  <label for="currentCustomer" class="col-sm-2 control-label">Current customer</label>
+  <div class="col-sm-10">
+    <input type="checkbox" ng-model="customer.customer" id="currentCustomer" ng-true-value="true" ng-false-value="false">
+  </div>
+</div>	
+
+	
+<div class="form-group">
+  <div class="col-sm-offset-2 col-sm-10">
+    <input type="submit" class="btn btn-primary" value="Save"/>
+  </div>
+</div>
+

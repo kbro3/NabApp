@@ -1,0 +1,20 @@
+
+<h3>Customer List</h3>
+
+<a ui-sref="newCustomer" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Add Customer</a>
+
+ <p class="margintop" ng-hide="customers && customers.length > 0">
+        There are no customers yet...
+      </p>
+
+<table class="table customertable">
+  <tr><th>Customer name</th><th>Title</th><th>Marital Status</th><th>Credit Rating</th><th>Current Customer</th><th>Edit Customer</th></tr>
+  <tr ng-repeat="customer in customers">
+  	
+    <td>{{customer.firstName + " " + customer.surname}}</td><td>{{customer.title}}</td><td>{{customer.maritalStatus}}</td><td>{{customer.creditRating}}</td><td>{{customer.customer === true ? "YES" : "NO"}}</td>
+    <td>
+      <a class="btn btn-primary" ui-sref="viewCustomer({id:customer.id})">View</a>
+      <a class="btn btn-danger"  ng-click="deleteCustomer(customer)">Delete</a>
+    </td>
+  </tr>
+</table>

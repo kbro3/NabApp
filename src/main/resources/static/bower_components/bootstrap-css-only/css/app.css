@@ -1,0 +1,29 @@
+.top-buffer{
+    margin-top:10px;
+}
+
+.customertable{
+	margin-top:10px;
+}
+
+.customertable tr td:nth-child(2){
+    width: 150px;
+}
+
+.customertable tr:nth-child(1) td{
+    border-top: none;
+}
+a.nodecoration{
+    text-decoration:none;
+}
+
+p.margintop{
+	
+	margin-top:20px;
+}
+.form-group.required .control-label:before{
+   color: red;
+   content: "*";
+   position: absolute;
+   margin-left: -15px;
+}

@@ -1,0 +1,46 @@
+<table class="table customertable">
+  <tr>
+    <td><h3>Details for {{customer.firstName + " " + customer.surname}}</h3></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>First name</td>
+    <td>{{customer.firstName}}</td>
+  </tr>
+  <tr>
+    <td>Middle name</td>
+    <td>{{customer.middleName}}</td>
+  </tr>
+  <tr>
+    <td>Surname</td>
+    <td>{{customer.surname}}</td>
+  </tr>
+  <tr>
+    <td>Initials</td>
+    <td>{{customer.initials}}</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td>{{customer.title}}</td>
+  </tr>
+  <tr>
+    <td>Sex</td>
+    <td>{{customer.sex}}</td>
+  </tr>
+  <tr>
+    <td>Marital Status</td>
+    <td>{{customer.maritalStatus}}</td>
+  </tr>
+  <tr>
+    <td>Credit Rating</td>
+    <td>{{customer.creditRating}}</td>
+  </tr>
+  <tr>
+    <td>Existing Customer</td>
+    <td>{{customer.customer === true ? "YES" : "NO"}}</td>
+  </tr>
+  
+</table>
+<div>
+  <a class="btn btn-primary" ui-sref="editCustomer({id:customer.id})">Edit</a>
+</div>
